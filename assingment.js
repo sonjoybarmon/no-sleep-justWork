@@ -62,7 +62,7 @@
         }
         return singleFriend;
     };
-    let friends =[20, 32, 65, 80, 59 , 24, 200];
+    let friends =["Johir", "Shaki", "Abid", "Rashel", "Soriful" , "Manik"];
     let results = tinyFriend(friends);
     console.log(results);
         
