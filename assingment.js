@@ -1,4 +1,4 @@
-    //1st soletion
+    //1st solution
     function feetToMile(feet){
         if (feet <= 0){
             return "Distance can not be negative!"
@@ -11,7 +11,7 @@
     console.log(resultMile);
 
 
-    //2nd soletion.
+    //2nd solution.
     function woodCalculator(numChair, numTable, numBed){
         let woodChair = numChair * 1;
         let woodTable = numTable * 3;
@@ -23,7 +23,7 @@
     console.log(result);
 
 
-    //3rd soletion
+    //3rd solution
     function brickCalculator(floorNumber){
         if (floorNumber <=10 && floorNumber >=1){
             let brickNumber = floorNumber * 15000;
@@ -51,7 +51,7 @@
     console.log(result4);
 
 
-    //4th soletion
+    //4th solution
     function tinyFriend(friend){
         let singleFriend =friend[0];
         for(let i = 0; i < friends.length; i++){
