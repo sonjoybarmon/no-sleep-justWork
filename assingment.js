@@ -1,14 +1,16 @@
     //1st solution
     function feetToMile(feet){
         if (feet <= 0){
-            return "Distance can not be negative!"
+            return feet + "wait Distance can not be negative"
         } else {
             let mile = feet / 5280;
             return mile;
         }
     };
-    var resultMile = feetToMile(12000).toFixed(2);
-    console.log(resultMile);
+    var resultMile1 = feetToMile(21000).toFixed(2);
+    var resultMile2 = feetToMile(0);
+    console.log(resultMile1);
+    console.log(resultMile2);
 
 
     //2nd solution.
