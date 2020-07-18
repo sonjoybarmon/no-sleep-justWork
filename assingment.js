@@ -76,5 +76,6 @@
     };
     let friends =["Johir", "Shaki", "Abid", "Rashel", "Soriful" , "Manik"];
     let results = tinyFriend(friends);
+
     console.log(results);
         
