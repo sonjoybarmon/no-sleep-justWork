@@ -26,31 +26,41 @@
 
 
     //3rd solution
-    function brickCalculator(floorNumber){
-        if (floorNumber <=10 && floorNumber >=1){
-            let brickNumber = floorNumber * 15000;
-            return brickNumber;
-        }
-        else if (floorNumber > 10 && floorNumber <= 20) {
-            let brickNumber = ((floorNumber - 10) * 12000) + 150000;
-            return brickNumber;
-        }
-        else if (floorNumber > 20){
-            let brickNumber =((floorNumber - 20) * 10000) + 270000;
-            return brickNumber;
-        }
-        else {
-            return "Something is wrong!";
-        }
+   function brickCalculator(floorNumber){
+    if (floorNumber >=1 && floorNumber <=10){
+        let brickNumber = floorNumber * 15000;
+        return brickNumber;
+    }
+    else if (floorNumber >= 11 && floorNumber <= 20) {
+        let fristBrickNumber = 10 * 15000;
+        let remaining = floorNumber - 10 ;
+        let secondBrickNumber = remaining * 12000 ;
+        brickNumber = fristBrickNumber + secondBrickNumber ;
+        return brickNumber;
+    }
+    else if (floorNumber > 21){
+        let fristBrickNumber = 10 * 15000 ;
+        let secondBrickNumber = 10 * 12000 ;
+        let remaining = floorNumber - 20 ;
+        let thirdBrickNumber = remaining * 10000 ;
+        brickNumber = fristBrickNumber + secondBrickNumber + thirdBrickNumber ;
+        return brickNumber;
+    }
+    else {
+        if( floorNumber <= -1){
+            return "Sorry enter positive number";
+        } 
+    }
+    return brickNumber;
     };
-    let result1 = brickCalculator(12);
-    console.log(result1);
-    let result2 = brickCalculator(26);
-    console.log(result2);
-    let result3 = brickCalculator(35);
-    console.log(result3);
-    let result4 = brickCalculator(-4);
-    console.log(result4);
+    let oneToTen = brickCalculator(7);
+    let elevenToTwenty = brickCalculator(19);
+    let twentyUp = brickCalculator(23);
+    let nagetive = brickCalculator(-5);
+    console.log(oneToTen);
+    console.log(elevenToTwenty);
+    console.log(twentyUp);
+    console.log(nagetive);
 
 
     //4th solution
